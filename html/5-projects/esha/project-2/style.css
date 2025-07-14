@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.hero {
+  min-height: 90vh;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/in/images/bg.jpg")
+    no-repeat center center;
+  background-size: cover;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+}
+
+.signin-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hero-content h2 {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.email-form input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+}
+
+.email-form button {
+  padding: 10px 16px;
+  background: red;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.features {
+  background: black;
+  padding: 40px 20px;
+  border-top: 4px solid #444;
+  margin-top: 100px;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.feature img {
+  width: 250px;
+}
+
+.feature div {
+  max-width: 400px;
+}
+
+.feature h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1rem;
+}
+
+.product-video,
+.pricing-table {
+  border-top: 4px solid #444;
+  padding: 40px 20px;
+  background: black;
+  text-align: center;
+  color: white;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.pricing-table table {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  border-collapse: collapse;
+  color: white;
+  text-align: center;
+  border: 1px solid #444;
+}
+
+.pricing-table caption {
+  caption-side: top;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 10px;
+  border: 1px solid #444;
+}
+
+.pricing-table thead {
+  background-color: #222;
+}
+
+footer {
+  background-color: black;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 4px solid #444;
+}
+
+.footer-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.movie-slider {
+  background: black;
+  padding: 30px 20px;
+  border-top: 4px solid #444;
+  text-align: center;
+}
+
+.movie-slider h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.slider-container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider-track {
+  display: flex;
+  gap: 10px;
+}
+
+.slider-track img {
+  width: 180px;
+  height: 270px;
+  flex-shrink: 0;
+}
