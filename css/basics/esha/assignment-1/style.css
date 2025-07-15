@@ -1,0 +1,12 @@
+#main-heading {
+  font-size: 30px;
+  color: #d35400;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+li {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
