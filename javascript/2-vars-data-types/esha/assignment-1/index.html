@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Types Demo</title>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.querySelector("#myBtn");
+        btn.addEventListener("click", function () {
+          alert("Internal JS: Button clicked!");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Single Button: JS from Inline, Internal, External</h2>
+
+    <button id="myBtn" onclick="alert('Inline JS: Button clicked!')">
+      Click Me
+    </button>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
