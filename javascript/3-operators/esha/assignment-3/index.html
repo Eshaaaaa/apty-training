@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparison App</title>
+  </head>
+  <body>
+    <h2>Data Comparison App</h2>
+
+    <label for="val1">Value 1: <input id="val1" type="text" /></label>
+    <select id="type1">
+      <option>String</option>
+      <option>Number</option>
+      <option>Boolean</option>
+      <option>Null</option>
+      <option>Undefined</option>
+      <option>Object</option>
+    </select>
+
+    <br /><br />
+
+    <label for="val2">Value 2: <input id="val2" type="text" /></label>
+    <select id="type2">
+      <option>String</option>
+      <option>Number</option>
+      <option>Boolean</option>
+      <option>Null</option>
+      <option>Undefined</option>
+      <option>Object</option>
+    </select>
+
+    <br /><br />
+
+    <button onclick="compareEqual()">==</button>
+    <button onclick="compareStrictEqual()">===</button>
+    <button onclick="compareNotEqual()">!=</button>
+    <button onclick="compareStrictNotEqual()">!==</button>
+    <button onclick="compareGreaterThan()">&gt;</button>
+    <button onclick="compareLessThan()">&lt;</button>
+    <button onclick="compareGreaterThanOrEqual()">&gt;=</button>
+    <button onclick="compareLessThanOrEqual()">&lt;=</button>
+
+    <div id="result"></div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

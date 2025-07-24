@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitwise Operators App</title>
+  </head>
+  <body>
+    <h2>Bitwise Operators App</h2>
+
+    <label for="val1">Value 1 (Number):</label>
+    <input type="number" id="val1" value="5" />
+    <br /><br />
+
+    <label for="val2">Value 2 (Number):</label>
+    <input type="number" id="val2" value="3" />
+    <br /><br />
+
+    <button onclick="performBitwiseAND()">& (AND)</button>
+    <button onclick="performBitwiseOR()">| (OR)</button>
+    <button onclick="performBitwiseXOR()">^ (XOR)</button>
+    <button onclick="performBitwiseNOT()">~ (NOT on Value 1)</button>
+    <button onclick="performLeftShift()">&lt;&lt; (Left Shift)</button>
+    <button onclick="performRightShift()">&gt;&gt; (Right Shift)</button>
+
+    <h3 id="result">Result:</h3>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
