@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h2>Calculator</h2>
+
+    Value 1: <input type="number" id="val1" /><br /><br />
+    Value 2: <input type="number" id="val2" /><br /><br />
+
+    <button onclick="calculate('+')">+</button>
+    <button onclick="calculate('-')">-</button>
+    <button onclick="calculate('*')">*</button>
+    <button onclick="calculate('/')">/</button>
+    <button onclick="calculate('%')">%</button>
+    <button onclick="calculate('++')">++ (val1)</button>
+    <button onclick="calculate('--')">-- (val1)</button>
+
+    <p id="output">Result:</p>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
