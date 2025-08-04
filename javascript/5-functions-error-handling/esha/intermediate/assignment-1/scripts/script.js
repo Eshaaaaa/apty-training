@@ -7,6 +7,10 @@ function repeatAction(action, n) {
 function createList() {
   const text = document.getElementById("itemText").value;
   const count = +document.getElementById("count").value;
+  if (!text || count <= 0) {
+    alert("Please enter valid text and a positive number for the count.");
+    return;
+  }
   const list = document.getElementById("outputList");
   list.innerHTML = "";
 

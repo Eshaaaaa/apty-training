@@ -7,6 +7,10 @@ function fibonacci(n) {
 function generateFibonacci() {
   const input = document.getElementById("num").value;
   const n = parseInt(input);
+  if (isNaN(n) || n < 1) {
+    document.getElementById("output").textContent = "Please enter a valid positive number.";
+    return;
+  }
   let series = [];
 
   for (let i = 0; i < n; i++) {

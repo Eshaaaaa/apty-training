@@ -2,11 +2,11 @@ const factorial = (function () {
   const cache = {};
 
   return function (n) {
-    if (n in cache) return `Cached: ${cache[n]}`;
+    if (n in cache) return { value: cache[n], fromCache: true };
     let result = 1;
     for (let i = 2; i <= n; i++) result *= i;
     cache[n] = result;
-    return `Computed: ${result}`;
+    return { value: result, fromCache: false };
   };
 })();
 
@@ -18,5 +18,8 @@ function calculate() {
     return;
   }
   const result = factorial(n);
-  document.getElementById("output").innerText = result;
+  const message = result.fromCache
+    ? `Cached: ${result.value}`
+    : `Computed: ${result.value}`;
+  document.getElementById("output").innerText = message;
 }

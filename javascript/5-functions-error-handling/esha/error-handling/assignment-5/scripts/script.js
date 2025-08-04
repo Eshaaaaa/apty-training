@@ -1,9 +1,8 @@
 function withdrawAmount(balance, amount) {
   if (amount > balance) {
-    throw {
-      errorCode: 101,
-      errorMessage: "Insufficient funds. Please enter a lower amount.",
-    };
+    const error = new Error("Insufficient funds. Please enter a lower amount.");
+    error.errorCode = 101;
+    throw error;
   }
   return balance - amount;
 }

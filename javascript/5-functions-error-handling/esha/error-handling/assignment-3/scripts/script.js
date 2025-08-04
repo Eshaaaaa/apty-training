@@ -4,7 +4,7 @@ const userList = {
   Saisha: { address: { city: "Chennai" } },
 };
 
-const default_city = "Pune";
+const DEFAULT_CITY = "Pune";
 
 function findCity() {
   const name = document.getElementById("username").value.trim();

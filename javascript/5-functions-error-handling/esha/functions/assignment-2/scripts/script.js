@@ -25,7 +25,7 @@ function sortNumbers() {
 
   for (let n of sorted) {
     const row = document.createElement("tr");
-    row.innerHTML = "<td>" + n + "</td>";
+    row.textContent = "<td>" + n + "</td>";
     resultBody.appendChild(row);
   }
 }
