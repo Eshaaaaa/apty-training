@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Array Sorting</title>
+  </head>
+  <body>
+    <h1>Sort Students by Score</h1>
+
+    <label for="studentsInput">Enter student array (JSON format):</label><br />
+    <input
+      type="text"
+      id="studentsInput"
+      placeholder='[{"name":"Bob","score":80},{"name":"Alice","score":90}]'
+      style="width: 25%"
+    /><br /><br />
+
+    <button onclick="sortStudents()">Sort</button>
+
+    <h3>Sorted Students:</h3>
+    <pre id="sortedStudents"></pre>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

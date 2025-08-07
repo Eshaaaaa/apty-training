@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map and Filter</title>
+  </head>
+  <body>
+    <h1>Filter Completed Tasks</h1>
+
+    <label for="tasksInput">Enter tasks (as array of objects):</label><br />
+    <textarea
+      id="tasksInput"
+      rows="5"
+      cols="60"
+      placeholder='[{"task": "A", "completed": true}, {"task": "B", "completed": false}, {"task": "C", "completed": true}]'
+    ></textarea
+    ><br /><br />
+
+    <button onclick="filterTasks()">Filter</button>
+
+    <p>Completed Tasks: <span id="completedTasks"></span></p>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

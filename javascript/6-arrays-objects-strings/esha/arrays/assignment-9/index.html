@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Every and Some</title>
+  </head>
+  <body>
+    <h1>Student Scores</h1>
+
+    <label for="scoresInput">Enter student scores (as array of objects):</label
+    ><br />
+    <textarea
+      id="scoresInput"
+      rows="6"
+      cols="60"
+      placeholder='[{"name": "Bob", "score": 80}, {"name": "Alice", "score": 90}]'
+    ></textarea
+    ><br /><br />
+
+    <button onclick="checkScores()">Check Scores</button>
+
+    <p>Result: <span id="result"></span></p>
+    <p>Students:</p>
+    <pre id="students"></pre>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

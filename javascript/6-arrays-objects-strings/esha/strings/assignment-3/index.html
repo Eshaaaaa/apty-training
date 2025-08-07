@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Escape Sequences</title>
+  </head>
+  <body>
+    <h2>Escape Sequence Replacer</h2>
+
+    <label for="inputStr">Enter a string:</label><br />
+    <textarea
+      id="inputStr"
+      rows="4"
+      cols="40"
+      placeholder="Hello\nWorld\t!"
+    ></textarea
+    ><br /><br />
+
+    <button onclick="replaceEscapeSequences()">Submit</button>
+
+    <p><strong>Output:</strong></p>
+    <pre id="output"></pre>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
