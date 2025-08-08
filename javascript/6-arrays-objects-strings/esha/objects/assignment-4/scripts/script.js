@@ -30,26 +30,3 @@ function mergeObjects() {
     document.getElementById("result").textContent = "Invalid JSON input!\n\n" + error.message;
   }
 }
-let config1 = {
-  theme: "dark",
-  user: {
-    name: "Alice",
-    id: 123
-  },
-  settings: {
-    notifications: true,
-    language: "en"
-  }
-};
-
-let config2 = {
-  theme: "light",
-  user: {
-    id: 456,
-    email: "alice@example.com"
-  },
-  settings: {
-    notifications: false
-  },
-  appVersion: "1.2.0"
-};
