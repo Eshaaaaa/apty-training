@@ -1,7 +1,9 @@
 function mostFrequent() {
-    let inputArray = document
+    const inputArray = document
         .getElementById("arrayInput")
         .value.split(",")
+        .map(s => s.trim())
+        .filter(s => s !== "")
         .map(Number);
     let frequencyMap = {};
     let maxCount = 0;
