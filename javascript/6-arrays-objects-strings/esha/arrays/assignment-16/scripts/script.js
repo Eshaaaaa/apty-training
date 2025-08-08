@@ -71,5 +71,5 @@ Choose the loop based on your priority:
 
 Note: Actual performance can vary across browsers and use cases.
 `;
-  document.getElementById("conclusion").innerText +=  report;
+  document.getElementById("conclusion").innerText = report;
 }
