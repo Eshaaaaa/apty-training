@@ -67,15 +67,15 @@ document.getElementById("changeTextBtn").addEventListener("click", () => {
 
 document.getElementById("toggleDisabledBtn").addEventListener("click", () => {
   const input = shadowRoot.querySelector("input[name='input1']");
-  if(input) {
+  if (input) {
     input.disabled = !input.disabled;
   }
 });
 
 document.getElementById("addCustomAttrBtn").addEventListener("click", () => {
   const pElement = shadowRoot.querySelector("[data-custom]");
-  if(pElement){
-  pElement.setAttribute("data-new-attribute", "newValue");
-  alert("Custom attribute added!");
+  if (pElement) {
+    pElement.setAttribute("data-new-attribute", "newValue");
+    alert("Custom attribute added!");
   }
 });
