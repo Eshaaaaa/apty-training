@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessing and Manipulating Elements</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1" style="width: 100%; text-align: center">
+      <tr>
+        <th>id</th>
+        <th>className</th>
+        <th>tag</th>
+        <th>name</th>
+        <th>attribute</th>
+      </tr>
+      <tr>
+        <td>
+          <p id="para1">Hello!</p>
+          <p id="para2">World!</p>
+          <button onclick="changeColorById()">Change Color</button>
+        </td>
+        <td>
+          <p class="group">Background Color Changes</p>
+          <p class="group">Background Color Changes</p>
+          <button onclick="toggleBackgroundColor()">Toggle Background</button>
+        </td>
+        <td>
+          <span>Initial Text 1</span>
+          <br />
+          <span>Initial Text 2</span>
+          <br />
+          <br />
+          <button onclick="updateText()">Change Text</button>
+        </td>
+        <td>
+          <input type="text" name="input1" value="First Name" />
+          <input type="text" name="input2" value="Last Name" />
+          <button onclick="toggleInputDisabled()">Toggle Disabled</button>
+        </td>
+        <td>
+          <p data-custom="value1">Custom Attribute 1</p>
+          <p data-custom="value2">Custom Attribute 2</p>
+          <button onclick="addNewCustomAttribute()">Add Attribute</button>
+        </td>
+      </tr>
+    </table>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Shadow DOM </title>
+    <style>
+        .container {
+            margin: 20px;
+        }
+
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shadow DOM Integration Example</h1>
+    <div id="shadowHost" class="container"></div>
+    <div>
+        <button id="changeColorBtn">Change Color</button>
+        <button id="toggleClassBtn">Toggle Background</button>
+        <button id="changeTextBtn">Change Text</button>
+        <button id="toggleDisabledBtn">Toggle Disabled</button>
+        <button id="addCustomAttrBtn">Add Custom Attribute</button>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

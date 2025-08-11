@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element Count Demo</title>
+  </head>
+  <body>
+    <header>
+      <h1>Nested Element Counter</h1>
+      <p>
+        Click the button to see the count of nested elements for each top-level
+        section.
+      </p>
+    </header>
+    <main>
+      <section>
+        <h2>Section 1</h2>
+        <p>This is the first section with nested content.</p>
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Section 2</h2>
+        <div>
+          <p>A paragraph in a nested div.</p>
+          <span>A nested span.</span>
+        </div>
+        <p>This is a paragraph at the same level.</p>
+      </section>
+      <section>
+        <h2>Section 3</h2>
+        <p>A simple section.</p>
+        <a href="#">A link element.</a>
+      </section>
+    </main>
+    <footer>
+      <button id="count">Count Nested Elements</button>
+      <ul id="output"></ul>
+    </footer>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

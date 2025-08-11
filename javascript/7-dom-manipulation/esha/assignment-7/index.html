@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle Div Visibility</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 100px;
+        border-radius: 20px;
+        border: 3px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Toggle Visibility of Divs</h1>
+
+    <div id="div1" class="box">Div 1</div>
+    <div id="div2" class="box hidden">Div 2</div>
+    <div id="div3" class="box hidden">Div 3</div>
+
+    <button onclick="toggleDivs()">Toggle Divs</button>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
