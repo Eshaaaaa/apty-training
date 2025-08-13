@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mutation</title>
+    <style>
+      #editableDiv {
+        padding: 10px;
+        border: 1px solid black;
+        display: inline-block;
+        cursor: pointer;
+        min-width: 200px;
+      }
+      .icon {
+        margin-left: 5px;
+        cursor: pointer;
+      }
+      textarea {
+        width: 100%;
+        min-height: 50px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Mutation Observer</h2>
+    <div id="editableDiv">
+      Click to type text <span class="icon">✏️</span>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

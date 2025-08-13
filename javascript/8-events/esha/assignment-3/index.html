@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Propagation</title>
+    <style>
+      .box {
+        font-family: 'Times New Roman', Times, serif;
+        padding: 20px;
+        border: 3px solid black;
+        margin: 10px;
+      }
+      #level1 {
+        background-color: rgb(87, 182, 87);
+      }
+      #level2 {
+        background-color: rgb(0, 100, 134);
+      }
+      #level3 {
+        background-color: rgb(190, 58, 58);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="level1" class="box">
+      Level 1
+      <div id="level2" class="box">
+        Level 2
+        <div id="level3" class="box">Level 3</div>
+      </div>
+    </div>
+    <script src="./scripts/script.js "></script>
+  </body>
+</html>
