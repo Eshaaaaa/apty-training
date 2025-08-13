@@ -15,7 +15,7 @@ username.addEventListener("input", () => {
 });
 
 email.addEventListener("input", () => {
-  if (!email.value.includes("@") || !email.value.includes(".")) {
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
     emailError.textContent = "Enter a valid email address";
   } else {
     emailError.textContent = "";
