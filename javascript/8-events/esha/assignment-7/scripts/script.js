@@ -18,7 +18,7 @@ const observer = new MutationObserver((mutations) => {
   });
 });
 
-observer.observe(document.body, { childList: true, subtree: true });
+observer.observe(editableDiv, { childList: true });
 
 editableDiv.addEventListener("click", () => {
   const currentText = editableDiv.textContent.trim();
