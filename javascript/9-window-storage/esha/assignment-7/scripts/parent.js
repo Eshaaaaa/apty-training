@@ -3,6 +3,9 @@ function sendToChild() {
     document.getElementById("childFrame").contentWindow.postMessage(msg, window.location.origin);
 }
 
-window.onmessage = function (event) {
+window.addEventListener('message', function (event) {
+    if (event.origin !== window.location.origin) {
+        return; // Security: only accept messages from same origin.
+    }
     document.getElementById("childMsg").textContent = event.data;
-};
+});
