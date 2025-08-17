@@ -5,7 +5,7 @@ const childFrame = document.getElementById("childFrame");
 
 sendToChild.addEventListener("click", () => {
   if (parentMsg.value.trim()) {
-    childFrame.contentWindow.postMessage(parentMsg.value, "*");
+    childFrame.contentWindow.postMessage(parentMsg.value, window.location.origin);
   }
 });
 
