@@ -4,7 +4,7 @@ const fromParent = document.getElementById("fromParent");
 
 sendToParent.addEventListener("click", () => {
   if (iframeMsg.value.trim()) {
-    window.parent.postMessage(iframeMsg.value, "*");
+    window.parent.postMessage(iframeMsg.value, window.location.origin);
   }
 });
 
