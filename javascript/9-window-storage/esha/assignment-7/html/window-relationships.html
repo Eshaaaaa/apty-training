@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Window Relationships - Parent</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>Parent Window</h1>
+    <input type="text" id="msgToChild" placeholder="Message to child" />
+    <button onclick="sendToChild()">Send to Child</button>
+    <p><b>From Child:</b> <span id="childMsg"></span></p>
+    <iframe
+      src="child.html"
+      id="childFrame"
+      width="400"
+      height="200"
+      style="border: 1px solid black"
+    ></iframe>
+    <script src="../scripts/parent.js"></script>
+  </body>
+</html>

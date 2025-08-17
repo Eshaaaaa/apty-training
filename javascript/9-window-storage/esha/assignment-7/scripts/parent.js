@@ -1,0 +1,8 @@
+function sendToChild() {
+    let msg = document.getElementById("msgToChild").value;
+    document.getElementById("childFrame").contentWindow.postMessage(msg, "*");
+}
+
+window.onmessage = function (event) {
+    document.getElementById("childMsg").textContent = event.data;
+};

@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.controls {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.long-content {
+    height: 2500px; 
+    padding-top: 100px; 
+    background: linear-gradient(to bottom, #d6eaff, #fff);
+    text-align: center;
+}
