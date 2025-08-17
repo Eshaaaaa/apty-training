@@ -9,6 +9,9 @@ sendToParent.addEventListener("click", () => {
 });
 
 window.addEventListener("message", (event) => {
+  if (event.origin !== window.location.origin) {
+      return; // Ignore messages from untrusted origins
+  }
   if (event.source === window.parent) {
     fromParent.textContent = event.data;
   }
