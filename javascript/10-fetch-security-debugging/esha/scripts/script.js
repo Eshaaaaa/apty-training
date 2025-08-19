@@ -36,7 +36,7 @@ async function getAllProducts() {
 async function searchProducts(query) {
     productsContainer.innerHTML = `<div class="spinner"></div>`;
     try {
-        const res = await fetch(`${BASE_URL}/search?q=${query}`);
+        const res = await fetch(`${BASE_URL}/search?q=${encodeURIComponent(query)}`);
         if (!res.ok) {
             throw new Error(`HTTP error! status: ${res.status}`);
         }
