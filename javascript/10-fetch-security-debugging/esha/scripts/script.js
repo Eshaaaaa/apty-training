@@ -45,7 +45,7 @@ async function searchProducts(query) {
     } catch (err) {
         console.error(err);
         showMessage("Search failed. Please try again.");
-        productsContainer.innerHTML = `<p id='no-products-message'>${err.message}</p>`;
+        productsContainer.innerHTML = `<p id='no-products-message'>Search failed. Please try again later.</p>`;
     }
 }
 
